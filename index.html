@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EquiFit - Premium Nutritious Beverages</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header sticky">
+        <div class="container">
+            <div class="header-logo">
+                <img src="logo_drink.png" alt="EquiFit Logo" class="logo"> <!-- Adjust path for your logo -->
+                <h1>EquiFit</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#cart" id="cart"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to EquiFit</h1>
+            <h2>Your Daily Dose of Health and Nutrition</h2>
+            <p>Convenient, All-Natural Beverages Crafted for Your Lifestyle.</p>
+            <a href="#products" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <h3>Our Bestsellers</h3>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="super_protein.jpeg" alt="Equifit super protein">
+                <h4>Equifit super protein</h4>
+                <p>High-protein drink to fuel your workouts.</p>
+                <span class="price">Rs.119</span>
+                <button class="btn add-to-cart" data-name="Equifit super protein" data-price="119">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="soya_drink.jpg" alt="Equifit soya milk">
+                <h4>Equifit soya milk</h4>
+                <p>Revitalize your day with this energy drink.</p>
+                <span class="price">Rs.89</span>
+                <button class="btn add-to-cart" data-name="Equifit soya milk" data-price="89">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="orange_drink.jpeg" alt="Vitamin Drink">
+                <h4>Equifit fruit protein</h4>
+                <p>Packed with essential vitamins for your health.</p>
+                <span class="price">Rs.79</span>
+                <button class="btn add-to-cart" data-name="Equifit fruit protein" data-price="79">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="nuts_drink.jpg" alt="Herbal Tea">
+                <h4>Equifit Nutty delight</h4>
+                <p>Healthy drink to fulfill your daily needs.</p>
+                <span class="price">Rs.74</span>
+                <button class="btn add-to-cart" data-name="Equifit Nutty delight" data-price="74">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="combo_drink.jpeg" alt="Equifit fruity punch">
+                <h4>Equifit fruity punch</h4>
+                <p>Healthy drink to fulfill your daily needs.</p>
+                <span class="price">Rs.199</span>
+                <button class="btn add-to-cart" data-name="Equifit fruity punch" data-price="199">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="mix fruit_drink.jpeg" alt="Equifit mix fruit">
+                <h4>Equifit mix fruit</h4>
+                <p>Healthy drink to fulfill your daily needs.</p>
+                <span class="price">Rs.89</span>
+                <button class="btn add-to-cart" data-name="Equifit mix fruit" data-price="89">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="milk varient_drink.jpg" alt="Equifit milky delight">
+                <h4>Equifit milky delight</h4>
+                <p>Healthy drink to fulfill your daily needs.</p>
+                <span class="price">Rs.139</span>
+                <button class="btn add-to-cart" data-name="Equifit milky delight" data-price="139">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="white_pouch.jpeg" alt="Equifit Meal Mix">
+                <h4>Equifit Meal Mix</h4>
+                <p>Just Add Water – Your Complete Meal in a Sip!</p>
+                <span class="price">Rs.59</span>
+                <button class="btn add-to-cart" data-name="Equifit Meal Mix" data-price="59">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="black_pouch.jpeg" alt="Equifit Power Pouch">
+                <h4>Equifit Power Pouch</h4>
+                <p>Nourishment Made Easy – Just Shake and Sip!</p>
+                <span class="price">Rs.59</span>
+                <button class="btn add-to-cart" data-name="Equifit Power Pouch" data-price="59">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="blue_pouch.jpeg" alt="Equifit Easy Meal">
+                <h4>Equifit Easy Meal</h4>
+                <p>Mix It, Drink It, Live It – Your Meal Solution!</p>
+                <span class="price">Rs.59</span>
+                <button class="btn add-to-cart" data-name="Equifit Easy Meal" data-price="59">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews">
+        <h3>Customer Feedback</h3>
+        <div class="review-grid">
+            <div class="review-item">
+                <p>"EquiFit is my go-to for a quick, healthy Drink on busy days!"</p>
+                <span>- Krish, Nutritionist</span>
+            </div>
+            <div class="review-item">
+                <p>"Love the Protein Boost! It's a game changer."</p>
+                <span>- Shourya, Fitness Trainer</span>
+            </div>
+            <div class="review-item">
+                <p>"These drinks keep me energized throughout the day!"</p>
+                <span>- Asad, Busy Professional</span>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="about">
+        <div class="about-content">
+            <img src="logo_drink2.jpeg" alt="About EquiFit" class="about-image">
+            <div class="about-text">
+                <h3>About EquiFit</h3>
+                <p><b>Discover Equifit</b><br> where health meets flavor in a bottle! At Equifit, we believe that nutritious beverages can also be delicious. Our premium line of drinks is meticulously crafted using only the highest quality, all-natural ingredients, ensuring you enjoy a health boost without compromising on taste.</p>
+                <p><b>Our Offerings</b>
+                    <br>Equifit offers a diverse range of high-quality, healthy drinks designed to cater to various dietary needs and preferences. Each drink is packed with essential nutrients, including proteins, vitamins, fiber, healthy carbohydrates, and good fats, making them perfect for:
+                    <br><br>- Health-Conscious Individuals: Fuel your day with a nutritious option that supports your wellness journey.
+                    <br>- Lactose-Intolerant Consumers: Enjoy delicious beverages without the worry of dairy-related issues.
+                    <br>- Athletes and Fitness Enthusiasts: Power your workouts and recovery with drinks that enhance performance and replenish energy.
+                    <br>- Vegan and Plant-Based Diet Followers: Indulge in our completely vegan offerings, rich in natural goodness.</p>
+                   <p><b>Our Ingredients</b><br>
+                    Equifit drinks are crafted from a unique blend of premium ingredients including high-quality proteins, natural fruits, and superfoods, ensuring that you not only taste the difference but feel the difference too. 
+                    <br><br>Join the Equifit community today and transform the way you hydrate and nourish your body!</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="contact">
+        <h3>Contact Us</h3>
+        <p>If you have any questions or feedback, please reach out to us!</p>
+        <div class="form-group">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Subject">
+        </div>
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </div>
+    
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 EquiFit. All Rights Reserved.</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-cart">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-modal-content"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>
