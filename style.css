@@ -170,17 +170,7 @@ body {
 }
 
 * Cart Modal */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
-}
+
 
 .modal-content {
     background-color: #222; /* Dark background for the modal */
