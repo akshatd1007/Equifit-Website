@@ -177,4 +177,10 @@ if (cart.length === 0) {
 } else {
     // Logic to display cart items
 }
+document.querySelector('.close-hamburger').addEventListener('click', function () {
+    navItems.classList.remove('active'); // Close the menu when clicked
+});
+hamburger.addEventListener('click', function () {
+    navItems.classList.toggle('active'); // Show/hide nav items
+});
 
