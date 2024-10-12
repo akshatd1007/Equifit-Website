@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    height: 100vh; /* Full viewport height */
+    height: auto; /* Change from 100vh to auto for better content management */
     background-color: #222; /* Dark background for the theme */
     color: #fff; /* Light text color for better readability */
 }
@@ -351,7 +351,8 @@ footer {
     margin-bottom: 20px; /* Space below each group */
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%; /* Full width for inputs */
     padding: 10px; /* Padding inside inputs */
     border: 1px solid #555; /* Light border */
@@ -418,4 +419,22 @@ button:hover {
     .contact p {
         font-size: 16px; /* Adjust font size for smaller screens */
     }
+
+    /* Prevent nav bar from covering the content */
+    .modal-content {
+        max-height: 80vh; /* Prevent modal from covering the entire screen */
+        overflow-y: auto; /* Allow scrolling if content overflows */
+    }
+
+    .modal {
+        display: flex; /* Ensure modal is flexbox to center content */
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically */
+    }
+
+    /* Adjust padding in the header */
+    .header {
+        padding: 10px 15px; /* Less padding for mobile */
+    }
 }
+
