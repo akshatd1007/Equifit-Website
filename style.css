@@ -169,7 +169,7 @@ body {
     background-color: #218838; /* Darker green on hover */
 }
 
-/* Cart Modal */
+* Cart Modal */
 .modal {
     display: none;
     position: fixed;
