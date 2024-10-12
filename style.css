@@ -324,88 +324,43 @@ footer {
     line-height: 1.6; /* Improved line height for readability */
 }
 
-/* Contact Us Section */
 .contact {
-    padding: 40px 20px;
-    background-color: #333; /* Dark background */
-    text-align: center;
+    padding: 40px 20px; /* Padding for the contact section */
+    background-color: #f9f9f9; /* Light background for contrast */
+    text-align: center; /* Center text */
 }
 
 .contact h3 {
-    margin-bottom: 30px; /* Increased space below heading */
-    color: #fff; /* White text for contrast */
-    font-size: 32px; /* Larger font size for heading */
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 28px; /* Font size for the heading */
 }
 
 .contact p {
-    color: #ddd; /* Lighter text for better readability */
-    margin-bottom: 20px; /* Space below paragraph */
+    margin-bottom: 30px; /* Space below the description */
+    color: #555; /* Color for the paragraph */
 }
 
 .form-group {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Center items vertically */
-    margin-bottom: 20px; /* Space below input group */
-    flex-wrap: wrap; /* Wrap inputs to new line on smaller screens */
+    display: flex; /* Flexbox for alignment */
+    flex-direction: column; /* Column layout */
+    gap: 15px; /* Space between inputs */
+    margin-bottom: 20px; /* Space below each group */
 }
 
-.form-group input {
-    width: 48%; /* Adjust width for two inputs */
-    padding: 12px; /* Padding inside inputs */
-    border: 1px solid #555; /* Light border for inputs */
+input, textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ddd; /* Light border */
     border-radius: 5px; /* Rounded corners */
-    background-color: #444; /* Input background color */
-    color: #fff; /* Text color for inputs */
-    margin: 10px 0; /* Space between inputs */
-}
-
-textarea {
-    width: 100%; /* Full width for textarea */
-    padding: 12px; /* Padding inside textarea */
-    border: 1px solid #555; /* Light border for textarea */
-    border-radius: 5px; /* Rounded corners */
-    background-color: #444; /* Textarea background color */
-    color: #fff; /* Text color for textarea */
-    margin-bottom: 20px; /* Space below textarea */
-    resize: vertical; /* Allow vertical resizing */
+    font-size: 16px; /* Font size */
 }
 
 button {
-    padding: 12px 25px; /* Increased button size */
-    background-color: #ff6347; /* Button color */
-    color: #fff;
-    border: none;
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin: 10px 0; /* Space above and below buttons */
-}
+    background-color: #28a745; /* Green button color */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners
 
-button:hover {
-    background-color: #ff4d29; /* Darker on hover */
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .form-group {
-        flex-direction: column; /* Stack input fields on smaller screens */
-        align-items: stretch; /* Align items to stretch full width */
-    }
-
-    .form-group input {
-        width: 100%; /* Full width for inputs on smaller screens */
-        margin-bottom: 10px; /* Space below inputs */
-    }
-
-    .contact h3 {
-        font-size: 28px; /* Adjust font size for smaller screens */
-    }
-
-    .contact p {
-        font-size: 16px; /* Adjust font size for smaller screens */
-    }
-}
 /* Hamburger menu */
 .hamburger-menu {
     display: none; /* Hide by default */
