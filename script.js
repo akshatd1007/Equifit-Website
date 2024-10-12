@@ -177,4 +177,10 @@ if (cart.length === 0) {
 } else {
     // Logic to display cart items
 }
+// Open cart modal only when the cart icon is clicked
+document.querySelector('#cart').addEventListener('click', function (event) {
+    event.preventDefault();
+    displayCart();
+    cartModal.style.display = 'block'; // Open modal
+});
 
