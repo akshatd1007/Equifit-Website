@@ -6,7 +6,6 @@ body {
     height: 100vh; /* Full viewport height */
     background-color: #222; /* Dark background for the theme */
     color: #fff; /* Light text color for better readability */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .container {
