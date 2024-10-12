@@ -380,3 +380,31 @@ button:hover {
         font-size: 16px; /* Adjust font size for smaller screens */
     }
 }
+/* Hamburger menu */
+.hamburger-menu {
+    display: none; /* Hide by default */
+    font-size: 30px; /* Font size for hamburger icon */
+    cursor: pointer; /* Change cursor on hover */
+    color: white; /* Hamburger color */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide the navbar items on mobile by default */
+        flex-direction: column; /* Stack items vertically */
+        position: absolute; /* Positioning to overlay on the screen */
+        top: 60px; /* Position below the header */
+        left: 0; /* Align to left */
+        width: 100%; /* Full width */
+        background-color: #111; /* Background for navbar */
+    }
+
+    nav ul.active {
+        display: flex; /* Show navbar items when active */
+    }
+
+    .hamburger-menu {
+        display: block; /* Show hamburger menu on mobile */
+    }
+}
