@@ -158,3 +158,12 @@ document.querySelector('.next-slide').addEventListener('click', function () {
 
 // Initialize the first slide on page load
 showSlide(currentSlide);
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.querySelector(".hamburger-menu");
+    const navItems = document.querySelector("nav ul");
+
+    hamburger.addEventListener("click", function () {
+        navItems.classList.toggle("active"); // Toggle active class to show/hide nav items
+    });
+});
+
