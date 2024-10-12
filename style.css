@@ -409,14 +409,7 @@ button:hover {
     }
 }
 /* Products section */
-.products {
-    padding: 20px; /* Reduce padding for mobile */
-}
 
-.product-item {
-    width: 90%; /* Full width on smaller screens */
-    margin: 10px 0; /* Reduced margin */
-}
 
 /* Contact Us Section */
 .contact {
