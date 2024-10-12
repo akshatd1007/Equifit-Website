@@ -408,3 +408,36 @@ button:hover {
         display: block; /* Show hamburger menu on mobile */
     }
 }
+/* Products section */
+.products {
+    padding: 20px; /* Reduce padding for mobile */
+}
+
+.product-item {
+    width: 90%; /* Full width on smaller screens */
+    margin: 10px 0; /* Reduced margin */
+}
+
+/* Contact Us Section */
+.contact {
+    padding: 20px; /* Reduced padding for mobile */
+}
+
+.contact h3 {
+    font-size: 24px; /* Adjust font size for smaller screens */
+}
+
+/* Footer */
+footer {
+    padding: 10px 0; /* Reduced vertical padding for mobile */
+}
+
+/* About Us Section */
+.about-content {
+    flex-direction: column; /* Stack image and text for mobile */
+}
+
+.about-image, .about-text {
+    width: 100%; /* Full width on mobile */
+}
+
