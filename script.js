@@ -175,4 +175,55 @@ document.addEventListener("DOMContentLoaded", function () {
         nav.classList.toggle('active'); // Toggle 'active' class to show/hide nav
     });
 </script>
+let cart = []; // Array to hold cart items
+
+// Function to add an item to the cart
+function addToCart(product) {
+    cart.push(product); // Add product to cart
+    updateCartDisplay(); // Update the cart display
+}
+
+// Function to update cart display
+function updateCartDisplay() {
+    const cartItemsContainer = document.getElementById("cartItems");
+    cartItemsContainer.innerHTML = ""; // Clear existing items
+
+    if (cart.length === 0) {
+        cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>"; // Message if empty
+    } else {
+        cart.forEach((item, index) => {
+            const cartItem = document.createElement("div");
+            cartItem.innerHTML = `
+                <h4>${item.name}</h4>
+                <p>Price: $${item.price}</p>
+                <button onclick="removeFromCart(${index})">Remove</button>
+            `;
+            cartItemsContainer.appendChild(cartItem); // Add item to cart display
+        });
+    }
+}
+
+// Function to remove an item from the cart
+function removeFromCart(index) {
+    cart.splice(index, 1); // Remove item from cart
+    updateCartDisplay(); // Update the cart display
+}
+
+// Open the cart modal
+document.querySelector(".cart-button").addEventListener("click", function () {
+    document.getElementById("cartModal").style.display = "block"; // Show modal
+});
+
+// Close the cart modal
+document.querySelector(".close-cart").addEventListener("click", function () {
+    document.getElementById("cartModal").style.display = "none"; // Hide modal
+});
+
+// Close modal when clicking outside of it
+window.onclick = function(event) {
+    const modal = document.getElementById("cartModal");
+    if (event.target === modal) {
+        modal.style.display = "none"; // Hide modal
+    }
+};
 
