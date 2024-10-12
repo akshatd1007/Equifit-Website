@@ -166,4 +166,13 @@ document.addEventListener("DOMContentLoaded", function () {
         navItems.classList.toggle("active"); // Toggle active class to show/hide nav items
     });
 });
+<script>
+    // JavaScript for Hamburger Menu
+    const hamburger = document.querySelector('.hamburger-menu');
+    const nav = document.querySelector('nav ul');
+
+    hamburger.addEventListener('click', () => {
+        nav.classList.toggle('active'); // Toggle 'active' class to show/hide nav
+    });
+</script>
 
