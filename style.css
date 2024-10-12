@@ -419,4 +419,8 @@ button:hover {
         font-size: 16px; /* Adjust font size for smaller screens */
     }
 }
-
+@media (min-width: 769px) {
+    .hamburger-menu {
+        display: none; /* Hide hamburger menu on larger screens */
+    }
+}
