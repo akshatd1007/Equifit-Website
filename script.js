@@ -172,3 +172,9 @@ document.addEventListener("DOMContentLoaded", function () {
         navItems.classList.toggle("active"); // Toggle active class to show/hide nav items
     });
 });
+if (cart.length === 0) {
+    cartModalContent.innerHTML = '<p>Your cart is empty</p>';
+} else {
+    // Logic to display cart items
+}
+
