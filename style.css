@@ -72,6 +72,11 @@ body {
     align-items: center;
     justify-content: center;
 }
+@media (max-width: 768px) {
+    .hero {
+        height: 300px; /* Adjust height for smaller screens */
+    }
+}
 
 .hero-content {
     text-align: center;
