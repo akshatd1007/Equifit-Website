@@ -188,5 +188,15 @@
     </div>
 
     <script src="script.js"></script> <!-- Link to the JavaScript file -->
+    <script>
+    // JavaScript for Hamburger Menu
+    const hamburger = document.querySelector('.hamburger-menu');
+    const nav = document.querySelector('nav ul');
+
+    hamburger.addEventListener('click', () => {
+        nav.classList.toggle('active'); // Toggle 'active' class to show/hide nav
+    });
+</script>
+
 </body>
 </html>
