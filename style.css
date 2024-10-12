@@ -487,4 +487,32 @@ button:hover {
         display: none; /* Hide hamburger menu on larger screens */
     }
 }
+@media (max-width: 768px) {
+    /* Example styles for mobile */
+    .header h1 {
+        font-size: 24px; /* Smaller title size */
+    }
+
+    .hero {
+        height: 200px; /* Adjust height for hero section */
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr; /* Stack products in one column */
+    }
+
+    .contact {
+        padding: 20px; /* Adjust padding */
+    }
+}
+.modal {
+    display: none; /* Only show when needed */
+    position: fixed;
+    z-index: 1000; /* Ensure it appears above other content */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+}
 
