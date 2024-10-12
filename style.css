@@ -21,7 +21,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center; /* Center items vertically */
-    position: relative; /* Enable absolute positioning of the nav */
 }
 
 .header-logo {
@@ -237,7 +236,6 @@ footer {
         display: block; /* Show hamburger menu on smaller screens */
         font-size: 28px; /* Font size for the hamburger icon */
         cursor: pointer; /* Pointer cursor on hover */
-        z-index: 10; /* Ensure it's above other elements */
     }
 
     nav ul {
@@ -248,15 +246,11 @@ footer {
         left: 0;
         background-color: #111; /* Background for the dropdown */
         width: 100%; /* Full width */
-        z-index: 9; /* Ensure it appears above other elements */
-        max-height: 0; /* Start with zero height */
-        overflow: hidden; /* Hide overflow */
-        transition: max-height 0.3s ease; /* Smooth transition */
+        z-index: 10; /* Ensure it appears above other elements */
     }
 
     nav ul.active {
         display: flex; /* Show navigation when active */
-        max-height: 300px; /* Limit max height to avoid covering too much space */
     }
 
     nav ul li {
